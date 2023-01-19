@@ -1,0 +1,46 @@
+ <!DOCTYPE html>
+<head>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
+</head>
+  <div class="header">
+    <mat-toolbar>
+      <mat-toolbar-row>
+        <img src="/assets/Logo1-removebg-preview.png">
+        <h1>WELCOME TO MILESTONE</h1>
+ <!-- <input type="text"  style=" width: 30%; font-size: large;  margin-left: -9%; padding: 0.5%; border:1px solid #042331; border-radius:8px"  placeholder= "Search  here"  name="array id" class="form-control"> -->
+ 
+       <a href= "/"   class="space2">profile      <i class="fa fa-user"></i></a>
+ 
+      </mat-toolbar-row>
+    </mat-toolbar>
+</div>
+
+  <input type="checkbox" id="check" value="">
+  <label for="check">
+    <i class="fa fa-bars" id="btn"></i>
+    <i class="fa fa-close" id="cancel"></i>
+  </label>
+    <div class="sidebar">
+        <ul>
+            <a><i class="fa fa-home" style="font-size:24px;color:white" ></i>Home</a>
+           
+            <h3><i class="fa fa-product-hunt"  style="font-size:24px"></i>Product<i class="fa fa-angle-down" style="font-size:24px;color:aliceblue;margin-left: 5%;  transition: all .5s ease;" (click)="toggle()"></i>	</h3>
+            <div *ngIf="sub">
+              <a href="#">  <li style="color: aliceblue;font-size:large;margin-left: 40%;text-decoration: none;">Marbles</li></a>
+              <a href="#"> <li style="color: aliceblue;font-size: large;margin-left: 40%;">Granites</li></a>
+          </div>
+            <a href="#"><i class="fa fa-raw-material" style="text-decoration: none;" ></i>Raw Material</a>           
+         <h3 href="#"><i class='fas fa-file-invoice'  style='font-size:36px;color: white;'></i>Invoices<i class="fa fa-angle-down" (click)="toggledata()" style="font-size:24px;color:aliceblue;margin-left: 5%;"></i>	</h3>
+          <p *ngIf="subdata">
+            <a href="#">  <li style="color: aliceblue;font-size:large;margin-left: 40%;">Inventory</li></a>
+            <a href="#"> <li style="color: aliceblue;font-size: large;margin-left: 40%;">Sold</li></a>
+          </p>
+          <a>Shopping</a>
+          <a>Sell</a>
+          <a>Help</a>
+        </ul>
+    </div>
+
+

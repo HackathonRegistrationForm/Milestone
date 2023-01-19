@@ -1,0 +1,33 @@
+
+
+<mat-toolbar>
+   <mat-toolbar-row>
+       
+       <div class="title">
+       </div>
+       
+     
+   </mat-toolbar-row>
+ </mat-toolbar>
+<article class="wrapper">
+<form [formGroup]="mobileForm" (ngSubmit)="mobilenum()">
+   <h1 style="color:white;text-align:center;font-size: 40px;">Login With Mobile Number</h1>
+  
+        <div class="otpForm">
+            <img src="https://oasis.opstatics.com/content/dam/oasis/page/2021/9-series/spec-image/9/Arcticsky_9.png" class="mobileimg">
+            <div class="phone">
+               <h3>Enter your phonenumber: <input type="text" class="phonebox" formControlName="mobile"></h3>
+               <span style="color: red;" *ngIf="mobile && mobile.invalid && mobile.touched">Please enter your mobile number</span>
+            </div>
+            <button class="otp" (click)="otp()">Generate OTP</button>
+
+            <div class="phone">
+                <h3>Enter OTP: <input type="text" class="phonebox1"></h3>
+             </div>
+             <button class="otp1">Verify OTP</button>
+             <button class="next">Next</button>
+        </div>
+
+
+</form>
+</article>

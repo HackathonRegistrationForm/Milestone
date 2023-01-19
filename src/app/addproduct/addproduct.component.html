@@ -1,0 +1,110 @@
+<head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  </head>
+  <body>
+    <mat-toolbar>
+        <mat-toolbar-row>
+            <img src="" class="img">
+            <div class="title1">
+            </div>
+        </mat-toolbar-row>
+      </mat-toolbar>
+  <br>
+  <br>
+     <div style="color: #3b3b3b;text-align: center; font-size: 60px;font-weight: bolder;" >Add Product </div>
+<form [formGroup]="productform">
+  <div class="container">
+ 
+    <div class="card h-100">
+      <div class="card-body">
+        <div class="row gutters">
+         
+        
+             <br>
+          <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-12" style="padding:1%"> 
+            <div class="form-group">
+              <label for="fullName"  style="font-size:30px;">Name</label>
+              <input type="text"   style="padding:3%" formControlName="name"  class="form-control" id="fullName"   >
+            </div>
+          </div>       
+           
+          <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-12" style="padding:1%">
+            <div class="form-group">
+              <label style="font-size:30px;" for="fullName">Capacity</label>
+              <input type="text"   style="padding:3%"   formControlName="Capacity"   class="form-control" id="fullName"   >
+            </div>
+          </div> 
+          <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-12" style="padding:1%">
+            <div class="form-group">
+              <label for="fullName"  style="font-size:30px;">Price</label>
+              <input type="text"   style="padding:3%"  formControlName="price"   class="form-control" id="fullName"   >
+            </div>
+          </div> 
+            
+          <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-12" style="padding:1%">
+            <div class="form-group">
+              <label for="eMail"  style="font-size:30px;">Style</label>
+              <input type="email" style="padding:3%"  formControlName="Style"  class="form-control" id="eMail"  >
+            </div>
+          </div>     
+          <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-12" style="padding:1%">
+            <div class="form-group">
+              <label for="eMail"  style="font-size:30px;">Size</label>
+              <input type="email" style="padding:3%"  formControlName="Size"  class="form-control"   >
+            </div>
+          </div>    
+        <br>
+        <br>
+        <div class="row gutters">
+          
+          <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-12" style="padding:1%">
+            <div class="form-group">
+              <label for="ciTy"  style="font-size:30px;">Color</label>
+              <input type="name"  style="padding:3%"  formControlName="Color"  class="form-control" id="ciTy" >
+            </div>
+          </div> 
+          <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-12" style="padding:1%">
+            <div class="form-group">
+              <label for="zIp"  style="font-size:30px;">Dimensions</label>
+              <input type="text"   style="padding:3%"  formControlName="Dimensions" class="form-control" id="zIp"  >
+            </div>
+          </div>
+          <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12" style="padding:1%">
+            <div class="form-group">
+              <label for="Street"  style="font-size:30px;">Weight</label>
+              <input type="text"   style="padding:3%"  formControlName="Weight" class="form-control" id="zIp"  >
+            </div>
+          </div>
+          <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-12" style="padding:1%"> 
+            <div class="form-group">
+              <label for="fullName"  style="font-size:30px;">Upload Image</label>
+              <input type="text"   style="padding:3%;width:205%;"  formControlName="Image"  class="form-control" id="zIp"  >
+            </div>
+          </div>  
+          <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12" style="padding:1%">
+            <div class="form-group">
+              <label for="Street"  style="font-size:30px;">Description</label>
+              <textarea type="name"  rows="5" style="width:100%;padding:2%"  formControlName="Description"   class="form-control" id="Street" ></textarea>
+            </div>
+          </div>
+        </div>
+        </div>      
+      </div>  
+      <br>
+        <div class="row gutters">
+          <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
+            <div class="text-right">           
+              <button  class="btn"  (click)="Add()" type="button" id="submit" name="submit" > Submit Details </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  
+   
+  </form>
+    <br>
+    <br>
+ 
+    </body>
+   

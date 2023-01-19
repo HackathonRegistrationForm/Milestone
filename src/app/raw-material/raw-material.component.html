@@ -1,0 +1,124 @@
+<head>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+</head>
+<body>
+<mat-toolbar>
+    <mat-toolbar-row>
+        
+        <div class="title1">
+            <h1></h1>
+            <input type="text"  style=" width: 280%; font-size: large;  margin-left: 200%; padding: 5%; border:1px solid #042331; border-radius:25px"  placeholder= "Search  here"  name="array id" class="form-control">
+        </div>
+    </mat-toolbar-row>
+  </mat-toolbar>
+  <button type="button" class="product1"  (click)="get()" >Get Product</button>
+  <button class="product" routerLink="/product">+Add Product</button>
+  <h2 style="text-align:center;">Advertisement Block</h2>
+  <section class="main" *ngIf="details">
+      <div *ngFor="let test of img">
+        <div class="users">   
+          <div class="card1">
+            <div class="zoom">
+         <img src="{{test.Image}}" class="imgshow" >
+        </div>
+         <table style="height:50px; padding: 2%" >
+          <tr>
+          <td class="tdstyle"> Name: </td> 
+          <td>{{test.name}}</td>
+        </tr>
+        <tr>
+          <td class="tdstyle"> Color: </td> 
+          <td>{{test.Color}}</td>
+        </tr>
+        <tr>
+          <td class="tdstyle"> Price: </td> 
+          <td>{{test.price}}</td>
+        </tr>
+        </table>
+  </div>
+</div>
+</div>
+</section>
+
+   </body>
+  
+   
+
+   
+  
+
+  
+
+<!-- <div *ngIf="popup">
+  <div class="pop-up-drop"></div>
+  <div class="pop-up">
+    <div class="wrapper">
+      <div class="registration_form">
+        <div class="title">
+
+          Add Product Form
+          <div (click)="can()"><i class="fa fa-close" style="font-size:24px;margin-left: 100%;margin-top: -10%;cursor: pointer;"></i></div>
+        </div>
+        <br>
+        <br>
+    
+        <form [formGroup]="productform">
+
+          <div class="form_wrap">
+            <div class="input_grp">
+              <div class="input_wrap">
+                <label for="file">Upload image</label>
+                <input type="text"  formControlName="Image">
+                <label for="file">Upoad Image<i class="fa fa-camera" style="font-size:15px;border-radius: 5px; background-color: #042331;"> </i></label>
+                <input type="file" (change)="onSelectFile($event)" id="file" style="display:none;visibility:none;"  formControlName="Image" > -->
+              <!-- </div> -->
+              <!-- <img [src]="url" style="height:100px;width:100px;"> -->
+              <!-- <div class="input_wrap">
+                <label for="">Name Of the Stone</label>
+                <input type="text" id="name"  formControlName="name" autocomplete="off">
+              </div>
+              <div class="input_wrap">
+                <label for="">Price</label>
+                <input type="text" id="price"  formControlName="price" autocomplete="off">
+              </div>
+              <div class="input_wrap">
+                <label for="">Style</label>
+                <input type="text" id="Style" formControlName="Style" autocomplete="off">
+              </div>
+            </div>
+            <div class="input_wrap">
+              <label for="">Size</label>
+              <input type="text" id="size" formControlName="Size" autocomplete="off">
+            </div>
+          
+            <div class="input_wrap">
+              <label for="city">Color</label>
+              <input type="text" id="city" formControlName="Color" autocomplete="off">
+            </div>
+            <div class="input_wrap">
+              <label for="country">Dimensions</label>
+              <input type="text" id="country" formControlName="Dimensions" autocomplete="off">
+            </div>
+            <div class="input_wrap">
+              <label for="country">Capacity</label>
+              <input type="text" id="country"formControlName="Capacity" autocomplete="off">
+            </div>
+            <div class="input_wrap">
+              <label for="country">Weight</label>
+              <input type="text" id="country" formControlName="Weight" autocomplete="off">
+            </div>
+            <div class="input_wrap">
+              <label for="country">Description</label>
+              <input type="text" id="country" formControlName="Description" autocomplete="off">
+            </div><br>
+            <div class="input_wrap">
+              <input type="submit" (click)="Add()" value="Add" class="submit_btn">
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+</div>  -->
+
+

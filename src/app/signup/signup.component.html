@@ -1,0 +1,42 @@
+<mat-toolbar>
+    <mat-toolbar-row>
+        <img src="" class="img">
+        <div class="title1">
+        </div>
+        <h1 style="color:white;margin-left: 1%;font-size: 60px;">Signup Form</h1>
+    </mat-toolbar-row>
+  </mat-toolbar>
+  <article class="wrapper">
+ <form [formGroup]="SignupForm" (ngSubmit)="signupdata(SignupForm)">
+    <div class="signup">
+        <div class="name1">
+            <i class="fa fa-arrow-left" routerLink="login"></i> Sign up </div>                
+        <div class="name">
+            First Name:<br>
+            <input type="text" formControlName="Firstname" placeholder="Enter your first name" class="input">
+            <span style="color: red;" *ngIf="Firstname && Firstname.invalid && Firstname.touched">Please enter your firstname</span> 
+        </div><br>
+        <div class="name">
+            Last Name:<br>
+            <input type="text"formControlName="Lastname" placeholder="Enter your last name"class="input">
+            <span style="color: red;" *ngIf="Lastname && Lastname.invalid && Lastname.touched">Please enter your lastname</span> 
+        </div><br>
+        <div class="name">
+            Mobile:<br>
+            <input type="text" formControlName="mobile" placeholder="+91-00000 00000" class="input">
+            <span style="color: red;" *ngIf="mobile && mobile.invalid && mobile.touched">Please enter your mobile number</span> 
+        </div><br>
+        <div class="name">
+            Email:<br>
+            <input type="email" formControlName="email" placeholder="Enter your email" class="input">
+            <span style="color: red;" *ngIf="email && email.invalid && email.touched">Please enter your email</span>
+        </div><br>
+        <div class="name">
+            Password:<br>
+            <input type="password" formControlName="password" placeholder="Enter your password" class="input">
+            <span style="color: red;" *ngIf="password && password.invalid && password.touched">Please enter your correct password</span>
+            <span style="font-size:small">You Have Already have an Account<a style="color:aqua" href="/login">Login</a></span>
+        </div><br>        
+        <button class="submit" (click) = "signup()">Submit</button> 
+    </div>   
+   </form>

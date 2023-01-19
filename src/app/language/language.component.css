@@ -1,0 +1,117 @@
+.lang{
+    color: black;
+    margin-top: 2em;
+    margin-left: 1em;
+}
+.language{
+    height: 400px;
+    width: 350px;
+    margin-top: 1em;
+    margin-left: 10%;
+    border-radius: 5px;
+    border: 2px solid rgb(59, 56, 56);
+    background-color: white;
+}
+.english{
+    height: 100px;
+    width: 100px;
+    border: 2px solid rgb(59, 56, 56);
+    margin-left: 2em;
+    margin-top: 3em;
+    border-radius: 5px;
+}
+.english:hover{
+    background-color: rgb(59, 56, 56);
+    color: white;
+}
+.wrapper {
+    animation: scroll  linear infinite;
+    background: url("https://images.unsplash.com/photo-1465146633011-14f8e0781093?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=3450&q=80"), #111111;
+    color: #eee;
+    height: 100vh;
+    min-width: 360px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    perspective: 1000px;
+    perspective-origin: 50% 50%;
+    
+  }
+  .img{
+    height: 75px;
+      border-radius: 50%;      
+}
+.title1{
+     color: white;
+    margin-left: 40%;
+    font-size: 2em;
+     
+}
+.img{
+    height: 75px;
+      border-radius: 50%;      
+}
+.title1{
+     color: white;
+    margin-left: 40%;
+    font-size: 2em;
+     
+}
+  .log{    
+    color: black;
+    background-color: white;
+    text-align: center;
+    border-radius: 5px;
+ margin-left: 30%;
+    height: 50px;
+    width: 100px;
+  }
+.search{
+    height: 40px;
+    width: 40em;
+    border-radius: 10px;
+    margin-left: 10em;
+    margin-top: 1em;
+    border: 0;
+}
+mat-toolbar-row{
+    background-color: #3b3b3b;
+    height: 80px;
+  }
+  .log{    
+    color: black;
+    background-color: white;
+    text-align: center;
+    border-radius: 5px;
+ margin-left: 30%;
+    height: 50px;
+    width: 100px;
+  }
+.telugu{
+    height: 100px;
+    width: 100px;
+    border: 2px solid rgb(59, 56, 56);
+    margin-right: 2em;
+    float: right;
+    margin-top: 3em;
+    border-radius: 5px;
+}
+.telugu:hover{
+    background-color: rgb(59, 56, 56);
+    color: white;
+}
+
+.hindhi{
+    height: 100px;
+    width: 100px;
+    border: 2px solid rgb(59, 56, 56);
+    margin-left: 9.3em;
+    border-radius: 5px;
+    margin-top: 1.5em;
+    
+}
+.hindhi:hover{
+    background-color: rgb(59, 56, 56);
+    color: white;
+}

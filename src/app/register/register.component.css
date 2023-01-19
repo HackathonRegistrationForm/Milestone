@@ -1,0 +1,155 @@
+.body{
+   background: linear-gradient(
+    105deg,
+    #3b3b3b,
+     #eceaea 
+   );
+    height: 500%;
+}
+.main .users{
+    display: flex;
+    flex-wrap: nowrap;
+    width: 100%;
+  margin: 10%;
+  margin-left: 18%;
+  }
+  .users .card{
+    width: 200%;
+    margin: 20px;
+    background: #fff;
+    text-align: center;
+    border-radius: 10px;
+    padding: 10px;
+    box-shadow: 0 20px  35px #eceaea;
+  }
+img{
+  width:20%;
+}
+  .users .card h4{
+    text-transform: uppercase;
+  }
+  .users .card p{
+    font-size: 12px;
+    margin-bottom: 15px;
+    text-transform: uppercase;
+  }
+  .users table{
+    margin:  auto;
+  }
+  .users .per span{
+    padding: 5px;
+    border-radius: 10px;
+    background: rgb(223, 223, 223);
+  }
+  .users td{
+    font-size: 14px;
+    padding-right: 15px;
+  }
+  .header{
+    position:relative;
+    overflow:hidden;
+    justify-content: center;
+    align-items: flex-start;
+    align-content: flex-start;
+    background-color:#3b3b3b;
+    height: 100px;
+    min-width:300px;
+    color:#eee;
+    box-shadow:0px 0px 10px #3b3b3b 
+  }
+  .space2{
+    cursor: pointer;
+      color: white;
+    background: transparent;
+  font-size: 20px; 
+text-align: center;
+margin-left: 10%;
+margin-top: 2%;
+text-decoration: none;
+  }
+  .input_wrap{
+	display: inline-block;
+	font-size: 28px;
+	padding: 10px 15px;
+	border-radius: 15px;	
+}
+.wrapper {
+  animation: scroll  linear infinite;
+  background: url("https://images.unsplash.com/photo-1465146633011-14f8e0781093?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=3450&q=80"), #111111;
+  color: #eee;
+  height: 100vh;
+  min-width: 360px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  perspective: 1000px;
+  perspective-origin: 50% 50%;
+  
+}
+
+@keyframes scroll {
+   100%{
+    background-position:0px -3000px;
+  }
+}
+
+@media (prefers-reduced-motion) {
+  .wrapper {
+    animation: scroll 200s linear infinite;
+  }
+}
+
+@media (min-width: 670px) {
+  .title {
+    font-size: 5rem;
+  }
+}
+  .form-control{
+    padding-right: 25px;
+    background: url(https://static.thenounproject.com/png/101791-200.png) no-repeat right;
+     background-size: 30px;
+     background-color: white;
+  }
+  .space2:hover{
+      
+    color: white;
+     transition: 0.5s;
+    font-weight: bold;
+   }
+  .header:after{
+    content:"";
+    width:110%;
+    position:absolute;
+    bottom:0;
+    left:0;
+    z-index:-1;
+   background: linear-gradient(to bottom, rgba(0,0,0,0.12) 40%,rgba(27,32,48,1) 100%);
+  }
+  .header:before{
+    content:"";
+    width:100%;
+    position:absolute;
+    top:0;
+    left:-2%;
+      -webkit-backface-visibility: hidden;
+      -webkit-transform: translateZ(0); backface-visibility: hidden;
+      transform: translateZ(0);
+    background-size:100%;
+    background-attachment:fixed;
+    animation: grow 360s  linear 10ms infinite;
+    transition:all 0.4s ease-in-out;
+    z-index:-2
+  }
+  .continue{
+    color:#3b3b3b;
+    border:2px solid #3b3b3b;
+    border-radius: 15%;
+padding: 0.5%;
+margin-left: 50%;
+ 
+}
+.continue:hover{
+    color:white;
+    background-color: #3b3b3b;
+}
